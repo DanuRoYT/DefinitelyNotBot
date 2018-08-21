@@ -1,39 +1,21 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+import discord
+from discord.ext import commands
 
-client.on('ready', () => {
-    console.log('I am ready!');
-});
+TOKEN='TOKENN'
+client = commands.Bot(command_prefix='??')
 
-client.on('message', message => {
-    if (message.content === '??help') {
-    	message.channel.send('
-??programator = **iti arata programatorul**
+@client.event
+async def on_ready():
+    print('gata')
+    print(client.user.name)
 
-??palma membru = **îi tragi o palmă unui membru**
-                             
-??avatar = **avatarul tau**
-       '}
-});
+@client.command(pass_context=True)
+async def clear(ctx, amount=100000000000000000000000000000000000000000000000):
+    channel = ctx.message.channel
+    messages = []
+    async for message in client.logs_from(channel, limit=int(amount) + 1):
+        messages.append(message)
+    await client.delete_messages(messages)
+    await client.say('Mesajele au fost sterse!', delete_after=1)
 
-client.on('message', message => {
-    if (message.content === '??programator') {
-    	message.reply('programatorul este DanuRo YT , are 10 ani, este youtuber, este gamer etc. youtube = DanuRo YT');
-  	}
-});
-
-client.on('message', message => {
-     
-    if (message.content === '??palma {user}') {
-        message.reply('iai dat o palmă lui {user}');
-    }
- });
-
- client.on ('message', message => {
-    if ('message.content === '??avatar') {
-         message.reply ('{user.avatar_url}');
-    }
- });
-
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+client.run(TOKENN)
