@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-TOKEN='TOKENN'
+TOKEN='TOKENNN'
 client = commands.Bot(command_prefix='??')
 
 @client.event
@@ -18,4 +18,4 @@ async def clear(ctx, amount=100000000000000000000000000000000000000000000000):
     await client.delete_messages(messages)
     await client.say('Mesajele au fost sterse!', delete_after=1)
 
-client.run(TOKENN)
+client.run(TOKENNN)
