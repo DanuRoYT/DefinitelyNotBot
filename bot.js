@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
+    if (message.content === 'helpbot') {
+    	message.channel.send('**_programator = arata programatorul botului || _avatar = arata avatarul programatorului**');
   	}
 });
 
