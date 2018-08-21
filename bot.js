@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.channel.send('
 ??programator = **iti arata programatorul**
 
-??palma @membru = **îi tragi o palmă unui membru**
+??palma membru = **îi tragi o palmă unui membru**
                              
 ??avatar = **avatarul tau**
        '}
