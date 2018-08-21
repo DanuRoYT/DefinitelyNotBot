@@ -6,8 +6,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
+    if (message.content === '_help') {
+    	message.channel.send('**_programator = arata programatorul botului
+                                
+                                _avatar = arata avatarul programatorului**');
   	}
 });
 
