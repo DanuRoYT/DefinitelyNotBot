@@ -27,7 +27,7 @@ client.on('message', message => {
     if (message.content === '??palma {user}') {
         message.reply('iai dat o palmă lui {user}');
     }
-});
+ });
 
  client.on ('message', message => {
     if ('message.content === '??avatar') {
