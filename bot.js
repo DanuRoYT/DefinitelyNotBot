@@ -1,21 +1,20 @@
-const Discord = require('discord.js');
+const Discord = require("Discord.js");
 const client = new Discord.Client();
 
-client.on('ready', () => {
-    console.log('I am ready!');
-});
+var prefix = '_'
+var token = 'BOT_TOKEN'
 
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
-  	}
-});
+client.on(ready., function() {
+console.log("ready")
+})
 
-client.on('message', message => {
-    if (message.content === 'bing') {
-    	message.reply('BONG!');
-  	}
-});
+client.on("message", message => {
+	async def programator():
+    embed = discord.Embed(
+        title = 'Utilizatorul : DanuRo YT',
+        description = 'Calm (in unele situatii), trist, in depresie, timid, nu e bagat in seama.',
+        colour = discord.Colour.blue()
+	
+})
 
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+client.login(BOT_TOKEN);
