@@ -7,13 +7,12 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '??help') {
-    	message.channel.send('``` 
+    	message.channel.send('
                               ??programator = **iti arata programatorul**
 
                               ??palma @membru = **îi tragi o palmă unui membru**
                              
-                              ??avatar = **avatarul tau**
-                              ```'}
+                              ??avatar = **avatarul tau**'}
 });
 
 client.on('message', message => {
