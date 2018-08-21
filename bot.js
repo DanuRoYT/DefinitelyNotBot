@@ -13,7 +13,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'programator') {
-    	message.reply('**Programatorul serverului este DanuRo YT#6977,pe youtube se numeste DanuRo YT');
+    	message.reply('**Programatorul serverului este DanuRo YT#6977,pe youtube se numeste DanuRo YT, este si gamer');
   	}
 });
 
