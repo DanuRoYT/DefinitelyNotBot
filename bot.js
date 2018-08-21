@@ -6,9 +6,12 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
-  	}
+    if (message.content === 'helpbot') {
+    await client.say(
+        """
+            **@everyone REGULAMENTUL COMUNITATI Subscribers & Lupis SPERAM SAL RESPECTATI CU MARE DRAG /!\**
+        """)
+    }
 });
 
 client.on('message', message => {
