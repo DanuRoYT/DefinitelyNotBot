@@ -6,14 +6,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
+    if (message.content === '??help') {
+    	message.channel.send('` ??programator `= **iti arata programatorul**');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'bing') {
-    	message.reply('BONG!');
+    if (message.content === '??programator') {
+    	message.reply('programatorul este DanuRo YT , are 10 ani, este youtuber, este gamei etc. youtube = DanuRo YT');
   	}
 });
 
