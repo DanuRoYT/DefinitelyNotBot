@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
+    if (message.content === 'programator') {
+    	message.channel.send('**Salut, programatorul e DanuRo YT,pe youtube il cheamă DanuRo YT**');
   	}
 });
 
