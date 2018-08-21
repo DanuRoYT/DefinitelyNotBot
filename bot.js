@@ -6,8 +6,22 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
+    if (message.content === 'helpbot') {
+    await client.say(
+        """
+            **@everyone REGULAMENTUL COMUNITATI Subscribers & Lupis SPERAM SAL RESPECTATI CU MARE DRAG /!\
+
+:arrow_right:? Cand faceti cerere grad trebuie sa puneti acest cuvant keye daca nu nu puteti primi grad Cuvant keye::arrow_forward:? Nu,nulvoi citi niciodata
+
+
+:arrow_right:? Nu injurati limbajul lincentios sau deranjant unui Lupisor sau unui Lupisor Alfa  se pedepseste cu [W]=Warn [B]=Ban [K]=Kick
+
+
+:arrow_right:? Nu cereti grade doar facand cererea pentru grad cersirea gradelor se pedepseste cu [M]=Mute 1h 2m si 10s
+
+
+:arrow_right:? Nu se face reclama la alte servere doar daca faceti cerere parteneriat obligatoriu daca vreti promova un server de discord sau al vostru**
+        """)      
   	}
 });
 
