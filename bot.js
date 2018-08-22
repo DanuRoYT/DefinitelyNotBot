@@ -6,14 +6,15 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('PONG!');
+    if (message.content === '!helpbot') {
+    	message.reply('`!avatar` = **iti arata avatarul tau**');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'bing') {
-    	message.reply('BONG!');
+    if (message.content === '!avatar') {
+    	message.reply(
+    embed.set_image(url='{user}');
   	}
 });
 
