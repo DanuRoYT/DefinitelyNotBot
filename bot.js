@@ -1,30 +1,23 @@
 const Discord = require('discord.js');
-const client = new Discord.client();
+const client = new Discord.Client();
+const tokens = require('./tokens.json');
 
 client.on('ready', () => {
-    console.log('I am ready!');
+  console.log('BOT STARTED UP!');
 });
 
-client.on('message', message => {
-    if (message.content === '??help') {
-    message.reply('`??programator` = **iti arata programatorul botului**');
-  	}
+client.on('ready', () => {
+  client.user.setActivity("help l shows help page.", {url: "https://www.twitch.tv"});
+  console.log(`${client.user.tag} running on ${client.guilds.size} guilds with ${client.users.size} users.`);
 });
 
-client.on("message", message => {
-	async def programator():
-    embed = discord.Embed(
-        title = 'Utilizatorul : DanuRo YT',
-        description = 'Calm (in unele situatii), trist, in depresie, timid, nu e bagat in seama.',
-        colour = discord.Colour.blue()
-	
-})
-
-client.on('message', message => {
-    if (message.content === 'bing') {
-    	message.reply('BONG!');
-  	}
+client.on('message', async msg=> {
+  if (msg.content === '@everyone') {
+	  msg.channel.send(`@everyone`)
+  }
+  if (msg.content === 'help') {
+	  msg.channel.send(`@everyone`)
+  }
 });
 
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+client.login(BOT_TOKEN.BOT_TOKEN);
