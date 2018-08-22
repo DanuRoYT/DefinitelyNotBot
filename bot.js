@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'helpbot') {
-    	message.channel.send('**programator = arata programatorul botului || avatar = arata avatarul programatorului**');
+    	message.channel.send('**programator = arata programatorul botului || avatar = arată avatarul programatorului**');
   	}
 });
 
